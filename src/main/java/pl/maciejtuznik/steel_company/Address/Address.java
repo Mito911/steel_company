@@ -20,11 +20,11 @@ public class Address {
     @JoinColumn(name = "fk_customer_id")
     private Customer customer;
 
-    // Domyślny konstruktor (bezargumentowy) - potrzebny do testów i działania JPA
+
     public Address() {
     }
 
-    // Konstruktor z argumentami
+
     public Address(Integer id, String deliveryAddress, String correspondemceAddress, Customer customer) {
         this.id = id;
         this.deliveryAddress = deliveryAddress;
@@ -32,7 +32,6 @@ public class Address {
         this.customer = customer;
     }
 
-    // Gettery i settery
     public Integer getId() {
         return id;
     }
